@@ -139,7 +139,7 @@ android {
         create("persistentDebug") {
             storeFile = persistentDebugKeystoreFile
             storePassword = "android"
-            keyAlias = "androiddebugkey"
+            keyAlias = "android"
             keyPassword = "android"
         }
         create("workflowDebug") {
@@ -155,7 +155,7 @@ android {
             keyPassword = System.getenv("KEY_PASSWORD")
         }
         getByName("debug") {
-            keyAlias = "androiddebugkey"
+            keyAlias = "android"
             keyPassword = "android"
             storePassword = "android"
             storeFile = file("${System.getProperty("user.home")}/.android/debug.keystore")
